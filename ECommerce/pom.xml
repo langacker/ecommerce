@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>mk</groupId>
+	<artifactId>ecommerce</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+	<name>E-commerce root</name>
+	<modules>
+		<module>core</module>
+		<module>gui</module>
+		<module>ear</module>
+	</modules>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.jboss.jbossas</groupId>
+				<artifactId>jboss-as-parent</artifactId>
+				<version>6.1.0.Final</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<scope>test</scope>
+				<version>4.10</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
